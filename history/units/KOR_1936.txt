@@ -1,0 +1,557 @@
+﻿#편제
+division_template = {
+	name = "시위대"
+	division_names_group = KOR_CDA_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "황실근위대"
+	division_names_group = KOR_IMG_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "보병 사단"
+	division_names_group = KOR_INF_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "기병 사단"
+
+	division_names_group = KOR_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		mot_artillery_brigade = { x = 1 y = 0 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "후방 사단"
+	division_names_group = "KOR_GAR_01"
+	# Garrison Division
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		military_police = { x = 0 y = 0 }
+	}
+    priority = 0
+}
+
+units = {
+#국내군
+	#특수 사단
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7125
+		division_template = "황실근위대"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7125
+		division_template = "시위대"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	#보병사단
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9918
+		division_template = "보병 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6963
+		division_template = "보병 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11835
+		division_template = "보병 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3860
+		division_template = "보병 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6944
+		division_template = "보병 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	#기병사단
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9899
+		division_template = "기병 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	#후방사단
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12089
+		division_template = "후방 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4056
+		division_template = "후방 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13234
+		division_template = "후방 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7221
+		division_template = "후방 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11977
+		division_template = "후방 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13241
+		division_template = "후방 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7021
+		division_template = "후방 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4052
+		division_template = "후방 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13237
+		division_template = "후방 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 848
+		division_template = "후방 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11835
+		division_template = "후방 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6944
+		division_template = "후방 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11915
+		division_template = "후방 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13236
+		division_template = "후방 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13240
+		division_template = "후방 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1177
+		division_template = "후방 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+#해외군
+	#보병사단
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 964
+		division_template = "보병 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 892
+		division_template = "보병 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3895
+		division_template = "보병 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6944
+		division_template = "보병 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3932
+		division_template = "보병 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6947
+		division_template = "보병 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9913
+		division_template = "보병 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9928
+		division_template = "보병 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12482
+		division_template = "보병 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6811
+		division_template = "보병 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 783
+		division_template = "보병 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3944
+		division_template = "보병 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	#기병사단
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6804
+		division_template = "기병 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3888
+		division_template = "기병 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10376
+		division_template = "기병 사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+}
+
+#공군
+air_wings = {
+	525 = { #서울
+		fighter_equipment_0 = {
+			owner = "KOR" 
+			amount = 200
+		}
+		CAS_equipment_1 = {
+			owner = "KOR" 
+			amount = 50
+		}
+	}
+	527 = { #평안
+		fighter_equipment_0 = {
+			owner = "KOR" 
+			amount = 70
+		}
+		CAS_equipment_1 = {
+			owner = "KOR" 
+			amount = 180
+		}
+	}
+	797 = { #대구
+		fighter_equipment_0 = {
+			owner = "KOR" 
+			amount = 30
+		}
+		CAS_equipment_1 = {
+			owner = "KOR" 
+			amount = 200
+		}
+	}
+}
+#시작 생산 장비
+instant_effect = {
+	add_equipment_production = { #소총 I
+		equipment = {
+			type = infantry_equipment_1
+			creator = "KOR"
+		}
+		requested_factories = 4
+		progress = 0.79
+		efficiency = 100
+	}
+}
+instant_effect = {
+	add_equipment_production = { #지원 장비
+		equipment = {
+			type = support_equipment_1
+			creator = "KOR"
+		}
+		requested_factories = 5
+		progress = 0.79
+		efficiency = 100
+	}
+}
+instant_effect = {
+	add_equipment_production = { #야포
+		equipment = {
+			type = artillery_equipment_1
+			creator = "KOR"
+		}
+		requested_factories = 2
+		progress = 0.79
+		efficiency = 100
+	}
+}

@@ -1,0 +1,21 @@
+state={
+	id=809
+	name="STATE_809"
+	manpower = 546854
+	
+	state_category = rural
+	history={
+		owner = YOD
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = MAN
+		add_core_of = CHI
+		add_core_of = PRC
+	}
+
+	provinces={
+		836 892 964 3783 3839 3895 3970 6804 6860 6910 6918 6981 9854
+	}
+}

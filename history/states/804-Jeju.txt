@@ -1,0 +1,27 @@
+state={
+	id=804
+	name="STATE_804"
+	manpower = 567000
+	
+	state_category = rural
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			1177 = {
+				naval_base = 2
+			}
+		}
+		
+		victory_points = {
+			1177 5
+		}	
+
+		add_core_of = KOR
+	}
+
+	provinces={
+		1177
+	}
+}

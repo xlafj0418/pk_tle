@@ -1,0 +1,73 @@
+music_station = "kbs"
+
+# Anthem
+
+music = {
+	song = "anthem_empire"
+		chance = {
+		modifier = {
+			factor = 1
+			original_tag = KOR
+		}
+	}
+}
+
+music = {
+	song = "anthem_democratic"
+	chance = {
+		modifier = {
+			factor = 1
+			original_tag = KOR
+			has_government = democratic
+		}
+	}
+}
+
+music = {
+	song = "fuck_communism"
+	chance = {
+		modifier = {
+			factor = 2
+			original_tag = KOR
+			has_war_with = SOV
+			NOT = {
+				has_government = communism
+			}
+		}
+	}
+}
+
+music = {
+	song = "going_frontline"
+	chance = {
+		modifier = {
+			factor = 2
+			original_tag = KOR
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = "hereiam"
+	chance = {
+		modifier = {
+			factor = 2
+			original_tag = KOR
+			has_war = yes
+			has_government = democratic
+		}
+	}
+}
+
+music = {
+	song = "final_5minutes"
+	chance = {
+		modifier = {
+			factor = 2
+			original_tag = KOR
+			has_war = yes
+			has_government = fascism
+		}
+	}
+}

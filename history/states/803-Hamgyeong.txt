@@ -1,0 +1,34 @@
+state={
+	id=803
+	name="STATE_803"
+	manpower = 3574500
+	state_category = town
+	resources={
+		steel = 3
+		tungsten = 7 
+	}
+
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 1
+		}
+		
+		victory_points = {
+			848 15
+		}	
+		
+		victory_points = {
+			6944 15
+		}	
+
+		add_core_of = KOR
+	}
+
+	provinces={
+		848 898 959 3803 3852 3860 3904 6822 6922 6928 6944 3981 9899 10083 11878
+	}
+}

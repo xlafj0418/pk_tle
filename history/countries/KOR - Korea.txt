@@ -1,0 +1,407 @@
+﻿capital = 525
+
+oob = "KOR_1936"
+
+set_research_slots = 3
+
+set_technology = {
+	### 보병 ###
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	motorised_infantry = 1
+	marines  = 1
+	
+	### 지원 ###
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	
+	### 포병 ###
+	gw_artillery = 1
+	
+	### 공군 ###
+	early_fighter = 1
+	CAS1 = 1
+	
+	### 육군 교리 ###
+	superior_firepower = 1
+	
+	### 산업/공학 ###
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+}
+
+#해군(노 맨더건)"
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_heavy_battery = 1
+		basic_medium_battery = 1
+		improved_ship_torpedo_launcher = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		mtg_transport = 1
+		coastal_defense_ships = 1
+		basic_secondary_battery = 1
+		basic_depth_charges = 1
+	}
+	set_naval_oob = "KOR_1936_Naval"
+}
+
+#해군(호구 에디션)"
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		basic_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+	set_naval_oob = "KOR_1936_Naval_Legacy"
+}
+
+show_ideas_tooltip = {
+	KOR_kepco
+}
+
+add_ideas = {
+	KOR_Weakening_the_kingship
+	KOR_political_officer
+	KOR_weak_army
+	KOR_political_turmoil
+}
+
+set_convoys = 250
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 18
+	fascism = 30
+	communism = 2
+	neutrality = 50
+}
+
+create_country_leader = {
+	name = "서재필"
+	desc = ""
+	picture = "gfx/leaders/KOR/Portrait_KOR_Philip_Jason.dds"
+	expire = "1951.1.5"
+	ideology = liberalism
+	traits = {
+		triumphant_revolutionary
+	}
+}
+
+create_country_leader = {
+	name = "이강"
+	desc = "KOR_YI_KANG_DESC"
+	picture = "gfx/leaders/KOR/Portrait_KOR_Yi_Kang.dds"
+	expire = "1955.8.1"
+	ideology = despotism
+	traits = {
+		korea_emperor
+	}
+}
+
+create_country_leader = {
+	name = "김일성"
+	desc = ""
+	picture = "gfx/leaders/KOR/Portrait_KOR_Kim_Il-sung.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "이범석"
+	desc = ""
+	picture = "gfx/leaders/KOR/Portrait_KOR_Lee_Beom_seok.dds"
+	expire = "1972.5.11"
+	ideology = fascism_ideology
+	traits = {
+		korea_four_star
+	}
+}	
+
+#육군(원수)
+create_field_marshal = {
+	name = "Kim Hong il"
+	id = 19361
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Kim_Hong_il.dds"
+	traits = { politically_connected inflexible_strategist trickster career_officer }
+	skill = 3
+    attack_skill = 3
+    defense_skill = 4
+    planning_skill = 3
+    logistics_skill = 5
+}
+
+create_field_marshal = {
+	name = "Yi Un"
+	id = 19362
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Yi_Un.dds"
+	traits = { politically_connected old_guard defensive_doctrine media_personality }
+	skill = 2
+    attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 3
+}
+
+#육군(대장)
+create_corps_commander = {
+	name = "Yi Wu"
+	id = 19363
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Yi_Wu.dds"
+	traits = { politically_connected media_personality brilliant_strategist armor_officer trait_engineer }
+	skill = 1
+    attack_skill = 2
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Lee Beom Seok"
+	id = 19364
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Lee_Beom_seok.dds"
+	traits = { cavalry_officer brilliant_strategist politically_connected }
+	skill = 3
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Kim Kyung cheon"
+	id = 19365
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Kim_Kyung_cheon.dds"
+	traits = { cavalry_officer armor_officer panzer_leader career_officer }
+	skill = 3
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ji Cheong Cheone"
+	id = 19366
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Ji_Cheong_cheon.dds"
+	traits = { inflexible_strategist infantry_officer defensive_doctrine }
+	skill = 3
+    attack_skill = 2
+    defense_skill = 4
+    planning_skill = 3
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Hong Sa ik"
+	id = 19367
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Hong_Sa_ik.dds"
+	traits = { organizer career_officer brilliant_strategist }
+	skill = 2
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Kim Won Bong"
+	id = 19368
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Kim_Won_bong.dds"
+	traits = { commando trickster brilliant_strategist }
+	skill = 3
+    attack_skill = 4
+    defense_skill = 1
+    planning_skill = 3
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Kim Suk won"
+	id = 19369
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Kim_Suk_won.dds"
+	traits = { infantry_officer brilliant_strategist career_officer }
+	skill = 3
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+#해군
+create_navy_leader = {
+	name = "Sin Sun seong"
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Sin_Sun_seong.dds"
+	traits = { naval_lineage battleship_adherent gunnery_expert ironside }
+	skill = 3
+	attack_skill = 5
+	defense_skill = 3
+	maneuvering_skill = 4
+	coordination_skill = 4
+}
+
+create_navy_leader = {
+	name = "Son Won Ile"
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Son_Won_il.dds"
+	traits = { bold aviation_enthusiast superior_tactician }
+	skill = 3
+	attack_skill = 5
+	defense_skill = 4
+	maneuvering_skill = 3
+	coordination_skill = 4
+}
+
+create_navy_leader = {
+	name = "Shin Sung mo"
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Shin_Sung_mo.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+puppet = YOD
+
+if = {
+	limit = { has_dlc = "Man the Guns"}
+		#전함
+		create_equipment_variant = {
+			name = "광무황제급"
+			name_group = KOR_BB_HISTORICAL
+			type = ship_hull_heavy_1
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_heavy_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				fixed_ship_armor_slot = ship_armor_bb_1
+				front_1_custom_slot = empty
+				mid_1_custom_slot = ship_secondaries_1
+				mid_2_custom_slot = ship_airplane_launcher_1
+				rear_1_custom_slot = ship_heavy_battery_2
+			}
+		}
+		#중순양함	
+		create_equipment_variant = {
+			name = "경주급"
+			type = ship_hull_cruiser_1
+			name_group = KOR_CA_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_medium_battery_2
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_armor_slot = ship_armor_cruiser_2
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				front_1_custom_slot = ship_medium_battery_2
+				mid_1_custom_slot = ship_torpedo_1
+				mid_2_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_airplane_launcher_1
+			}
+		}
+		#경순양함
+		create_equipment_variant = {
+			name = "평양급"
+			type = ship_hull_cruiser_1
+			name_group = KOR_CL_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				mid_1_custom_slot = empty
+				mid_2_custom_slot = ship_torpedo_2
+				rear_1_custom_slot = empty
+			}
+		}
+		#구축함
+		create_equipment_variant = {
+			name = "광개토대왕급"
+			type = ship_hull_light_2
+			name_group = KOR_DD_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_depth_charge_1
+			}
+		}
+		#구축함2
+		create_equipment_variant = {
+			name = "울산급"
+			type = ship_hull_light_1
+			name_group = KOR_DD_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = empty
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_depth_charge_1
+			}
+		}
+		#잠수함
+		create_equipment_variant = {
+			name = "부산급"
+			type = ship_hull_submarine_1
+			name_group = KOR_SS_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_torpedo_slot = ship_torpedo_sub_1
+				fixed_ship_engine_slot = sub_ship_engine_1
+				rear_1_custom_slot = ship_mine_layer_sub
+			}
+		}
+}
+
+고종의 5번쨰 아들이자 대한제국의 황제인 강주황제(이강)는 선황인 융희황제가 승하한 이후 황제가 된 지 얼마되지는 않았지만 황태자 시절 보여줬던 행동으로 인해 유능한 황제, 대한제국을 살릴 황제라고 평가하지만 황권을 강화할려는 시도를 하고 군부와 거리를 두는 등 입헌파들 특히 군부와 사이가 좋지 않습니다. 과연 강주황제는 대한제국을 살릴수 있을까요?

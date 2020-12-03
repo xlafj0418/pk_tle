@@ -1,0 +1,26 @@
+state={
+	id=805
+	name="STATE_805"
+	manpower = 59000
+	
+	state_category = large_town
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 1
+		}
+		
+		victory_points = {
+			13237 20
+		}	
+
+		add_core_of = KOR
+	}
+
+	provinces={
+		13237
+	}
+}

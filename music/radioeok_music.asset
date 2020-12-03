@@ -1,0 +1,66 @@
+
+music = { #애국가
+	name = "anthem_empire"
+	file = "radio_eok/anthem_empire.ogg"
+	volume = 0.8
+}
+
+music = { #대한민국 애국가
+	name = "anthem_democratic"
+	file = "radio_eok/anthem_democratic.ogg"
+	volume = 0.3
+}
+
+music = { #멸공의 횃불
+	name = "fuck_communism"
+	file = "radio_eok/fuck_communism.ogg"
+	volume = 0.8
+}
+
+music = { #전선을 간다
+	name = "going_frontline"
+	file = "radio_eok/going_frontline.ogg"
+	volume = 0.8
+}
+
+music = { #여기의 섰다
+	name = "hereiam"
+	file = "radio_eok/hereiam.ogg"
+	volume = 0.8
+}
+
+music = { #최후의 5분
+	name = "final_5minutes"
+	file = "radio_eok/final_5minutes.ogg"
+	volume = 0.8
+}
+
+music = { #진짜 사나이
+	name = "real_man"
+	file = "radio_eok/real_man.ogg"
+	volume = 0.8
+}
+
+music = { #진군가
+	name = "korean_march"
+	file = "radio_eok/korean_march.ogg"
+	volume = 0.8
+}
+
+music = { #바다로 가자
+	name = "lets_go_sea"
+	file = "radio_eok/lets_go_sea.ogg"
+	volume = 0.8
+}
+
+music = { #행군의 아침
+	name = "marching_morning"
+	file = "radio_eok/marching_morning.ogg"
+	volume = 0.8
+}
+
+music = { #기갑가
+	name = "panzerlied_korean"
+	file = "radio_eok/panzerlied_korean.ogg"
+	volume = 0.8
+}
